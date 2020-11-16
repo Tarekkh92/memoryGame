@@ -8,7 +8,7 @@ var app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-mongoose.connect("mongodb+srv://tk9294:)QAuqKSX&jR7+;c8rXfY.&Q6pr/.Z#@cluster0.kbaxw.mongodb.net/memoryGame?retryWrites=true&w=majority", function (err, database) {
+mongoose.connect("mongodb+srv://tk9294:MH2o2uZvFTxOecFC@cluster0.kbaxw.mongodb.net/memoryGame?retryWrites=true&w=majority", function (err, database) {
     if (err) {
         console.log("Error: " + err);
     }

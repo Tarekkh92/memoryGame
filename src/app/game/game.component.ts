@@ -261,7 +261,7 @@ public addHistory() {
           " "+this.endOfGame.toLocaleTimeString(),this.moves+(this.count+1),this.duration1);
       this.sub =  this.historiesService.addGameAsync(history).subscribe();
       setTimeout(() => { 
-       window.location.href = "/game";
+       window.location.href = "/";
     }, 3000);
 }
 

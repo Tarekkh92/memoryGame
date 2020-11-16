@@ -11,12 +11,12 @@ export class historiesService{
     constructor(private httpClient: HttpClient){}
 
     public getHistoryAsync(): Observable<GameHistory[]> {
-        return this.httpClient.get("http://localhost:3000/game")
+        return this.httpClient.get("https://memoryga.herokuapp.com/game")
             .map((messages: Object) => <GameHistory[]>messages);
     }
     public addGameAsync(history): Observable<GameHistory[]>{
 
-        return this.httpClient.post("http://localhost:3000/game",history).map((history:GameHistory[])=>history);
+        return this.httpClient.post("https://memoryga.herokuapp.com/game",history).map((history:GameHistory[])=>history);
 
     }
 
